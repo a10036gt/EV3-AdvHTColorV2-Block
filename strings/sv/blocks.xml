@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="HiTechnic Color">
+    <PolyGroup Name="HTColorSensor" DisplayName="HiTechnic Color V2 - OFDL Dev.">
+      <Description><![CDATA[<p>Context help for PolyGroup <b>HTColorSensor</b></p>]]></Description>
+      <Parameter Name="Port" DisplayName="Port">
+        <Description><![CDATA[<p>Context help for Parameter <b>Port</b></p>]]></Description>
+      </Parameter>
+      <Parameter Name="Color" DisplayName="Color">
+        <Description><![CDATA[<p>Context help for Parameter <b>Color</b></p>]]></Description>
+      </Parameter>
+      <Parameter Name="Red" DisplayName="Red">
+        <Description><![CDATA[<p>Context help for Parameter <b>Red</b></p>]]></Description>
+      </Parameter>
+      <Parameter Name="Green" DisplayName="Green">
+        <Description><![CDATA[<p>Context help for Parameter <b>Green</b></p>]]></Description>
+      </Parameter>
+      <Parameter Name="Blue" DisplayName="Blue">
+        <Description><![CDATA[<p>Context help for Parameter <b>Blue</b></p>]]></Description>
+      </Parameter>
+      <Parameter Name="White" DisplayName="White">
+        <Description><![CDATA[<p>Context help for Parameter <b>White</b></p>]]></Description>
+      </Parameter>
+	  <Parameter Name="Hue" DisplayName="Hue">
+        <Description><![CDATA[<p>Context help for Parameter <b>Hue</b></p>]]></Description>
+      </Parameter>
+	  <Parameter Name="Lightness" DisplayName="Lightness(%)">
+        <Description><![CDATA[<p>Context help for Parameter <b>Lightness</b></p>]]></Description>
+      </Parameter>
+	  <Parameter Name="Saturation" DisplayName="Saturation(%)">
+        <Description><![CDATA[<p>Context help for Parameter <b>Saturation</b></p>]]></Description>
+      </Parameter>
+	  <Parameter Name="Value" DisplayName="Value(%)">
+        <Description><![CDATA[<p>Context help for Parameter <b>Value</b></p>]]></Description>
+      </Parameter>
+	  <Parameter Name="Mode" DisplayName="Frequency">
+        <Description><![CDATA[<p>Context help for Parameter <b>Mode</b></p>]]></Description>
+      </Parameter>
+      <Block Mode="MeasureColor" DisplayName="Color">
+        <Description><![CDATA[<p>Context help for Block <b>Measure Color</b></p>]]></Description>
+      </Block>
+      <Block Mode="MeasureRGB" DisplayName="RGB">
+        <Description><![CDATA[<p>Context help for Block <b>Measure RGB</b></p>]]></Description>
+      </Block>
+      <Block Mode="MeasurePassive" DisplayName="Passive">
+        <Description><![CDATA[<p>Context help for Block <b>Measure Passive</b></p>]]></Description>
+      </Block>
+      <Block Mode="MeasureRaw" DisplayName="Raw">
+        <Description><![CDATA[<p>Context help for Block <b>Measure Raw</b></p>]]></Description>
+      </Block>
+	  <Block Mode="MeasureHSV" DisplayName="HSVL">
+        <Description><![CDATA[<p>Context help for Block <b>Measure HSVL</b></p>]]></Description>
+      </Block>
+	  <Block Mode="SetFrequency" DisplayName="Frequency Setting">
+        <Description><![CDATA[<p>Context help for Block <b>Set Frequency</b></p>]]></Description>
+      </Block>
+    </PolyGroup>    
+  </PolyGroups>
+</EditorStrings>

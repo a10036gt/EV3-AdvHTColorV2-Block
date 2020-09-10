@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Version="1.0.2.10" xmlns="http://www.ni.com/SourceModel.xsd">
+    <Namespace Name="Project">
+        <VirtualInstrument IsTopLevel="false" IsReentrant="false" Version="1.0.2.0" xmlns="http://www.ni.com/VirtualInstrument.xsd">
+            <DataItem Name="SequenceIn" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="6" />
+            <DataItem Name="SequenceOut" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" DefaultTerminalDirection="Input" CallUsage="None" CallDirection="Output" CallIndex="6" />
+            <DataItem Name="Port" DataType="Single" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="0" DefaultValue="0" />
+            <DataItem Name="Mode" DataType="Boolean" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="1" DefaultValue="False" />
+            <FrontPanel>
+                <fpruntime:FrontPanelCanvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:Model0="clr-namespace:NationalInstruments.SourceModel.Designer;assembly=NationalInstruments.SourceModel" x:Name="FrontPanel" Model0:DesignerSurfaceProperties.CanSnapToObjects="True" Model0:DesignerSurfaceProperties.SnapToObjects="True" Model0:DesignerSurfaceProperties.ShowSnaplines="True" Model0:DesignerSurfaceProperties.ShowControlAdorners="True" Width="640" Height="480" />
+            </FrontPanel>
+            <BlockDiagram Name="__RootDiagram__">
+                <Wire Id="w9" Joints="N(n17:Value) h(21) v(28) N(n12:port)" />
+                <DataAccessor DataItem="Port" Id="n17" Bounds="1029 574 70 14">
+                    <Terminal Id="Value" Direction="Output" Wire="w9" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                </DataAccessor>
+                <MethodCall Id="n12" Bounds="1127 602 56 56" Target="HTColorSetMode\.vix">
+                    <Terminal Id="port" Direction="Input" Wire="w9" DataType="Single" Hotspot="0 0.5" Bounds="0 0 14 14" />
+                    <Terminal Id="mode" Direction="Input" Wire="w12" DataType="Byte" Hotspot="0 0.5" Bounds="0 14 14 14" />
+                </MethodCall>
+                <Literal Id="n19" Terminals="Out=w10" Bounds="945 637 28 14" Interpretation="Exact" DataType="Byte">53</Literal>
+                <Comment Bounds="1057 756 126 49" SizeMode="User" AttachStyle="Free">
+                    <Content>False = 50 Hz (53)
+True =  60 Hz (54)
+</Content>
+                </Comment>
+                <Literal Id="n6" Terminals="Out=w11" Bounds="945 595 28 14" Interpretation="Exact" DataType="Byte">54</Literal>
+                <DataAccessor DataItem="Mode" Id="n13" Bounds="875 616 70 14">
+                    <Terminal Id="Value" Direction="Output" Wire="w8" Hotspot="1 0.5" Bounds="0 0 70 14" />
+                </DataAccessor>
+                <Select Id="n7" Terminals="s\?\ t\:f=w12, f=w10, s=w8, t=w11" TopLeft="1008 602" />
+                <Wire Id="w8" Joints="N(n13:Value) N(n7:s)" />
+                <Wire Id="w10" Joints="N(n19:Out) h(28) v(-7) N(n7:f)" />
+                <Wire Id="w11" Joints="N(n6:Out) h(28) v(7) N(n7:t)" />
+                <Wire Id="w12" Joints="N(n7:s\?\ t\:f) N(n12:mode)" />
+            </BlockDiagram>
+        </VirtualInstrument>
+    </Namespace>
+</SourceFile>
